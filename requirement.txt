@@ -1,0 +1,10 @@
+streamlit
+llama-index
+llama-index-llms-openai
+llama-index-readers-file
+langchain
+langchain-openai
+pymupdf
+python-dotenv
+openai
+neo4j
