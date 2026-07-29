@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="description" content="PocketCA is an Indian tax-law assistant with smart chat, document citation, and tax calculation support." />
+    <meta name="theme-color" content="#4f46e5" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <title>PocketCA | AI Tax Assistant</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+
+<body>
+    <div class="page-shell">
+        <nav class="site-nav">
+            <div class="brand">
+                <div class="brand-mark">₹</div>
+                <div>
+                    <div class="brand-name">PocketCA</div>
+                    <div class="brand-tag">Your AI Tax Assistant</div>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#guides">Guides</a>
+                <a href="#calculators">Calculators</a>
+                <a href="#resources">Resources</a>
+                <a href="#about">About</a>
+            </div>
+            <button class="nav-action">Login / Sign Up</button>
+        </nav>
+
+        <main class="hero-grid" id="home">
+            <section class="hero-copy">
+                <span class="eyebrow">AI POWERED</span>
+                <h1>Your smart guide to income tax rules</h1>
+                <p>Get instant answers to Indian tax questions, stay compliant, and understand deductions with an easy AI assistant.</p>
+                <div class="hero-actions">
+                    <a href="#chat-panel" class="primary-button">Ask AI Chatbot</a>
+                    <a href="#guides" class="secondary-button">Explore Tax Guides</a>
+                </div>
+                <div class="feature-cards">
+                    <article>
+                        <div class="icon">🤖</div>
+                        <h3>AI Chatbot</h3>
+                        <p>Ask tax questions and get guided answers instantly.</p>
+                    </article>
+                    <article>
+                        <div class="icon">📚</div>
+                        <h3>Tax Guides</h3>
+                        <p>Explore simplified rules for deductions and filing.</p>
+                    </article>
+                    <article>
+                        <div class="icon">🧮</div>
+                        <h3>Calculators</h3>
+                        <p>Estimate liability and compare regimes easily.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="hero-panel" id="chat-panel">
+                <div class="panel-header">
+                    <div>
+                        <div class="panel-title">PocketCA AI</div>
+                    </div>
+                    <div class="panel-status online">Online</div>
+                </div>
+                <div class="chat-panel">
+                    <div class="chat-messages" id="chat-messages">
+                        <div class="chat-message assistant">
+                            <div class="message-role">assistant</div>
+                            <div class="message-content">Hi! Ask me anything about income tax rules, deductions, exemptions, or filing.</div>
+                        </div>
+                    </div>
+                    <form class="chat-form" id="chat-form">
+                        <textarea id="user-message" rows="4" placeholder="Type your question here..."></textarea>
+                        <button type="submit" class="primary-button" id="send-button">Send</button>
+                    </form>
+                </div>
+                <div class="panel-footer">
+                    <div><strong>Rebuild status:</strong> <span id="rebuild-status">idle</span></div>
+                    <div class="panel-actions">
+                        <button type="button" id="refresh-status" class="secondary-button">Refresh</button>
+                        <button type="button" id="trigger-rebuild" class="primary-button">Rebuild</button>
+                    </div>
+                </div>
+                <div class="error-banner hidden" id="error-banner"></div>
+            </section>
+        </main>
+
+        <section class="stats-strip">
+            <div>
+                <strong>50K+</strong>
+                <p>Happy users</p>
+            </div>
+            <div>
+                <strong>1M+</strong>
+                <p>Questions answered</p>
+            </div>
+            <div>
+                <strong>100%</strong>
+                <p>Secure & private</p>
+            </div>
+            <div>
+                <strong>24/7</strong>
+                <p>AI availability</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
